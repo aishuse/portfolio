@@ -3,13 +3,15 @@ import {
     skills,
     projects,
     education,
+    training,
     experience,
+    publications,
     footer,
   } from "./user-data/data.js";
 
 import { URLs } from './user-data/urls.js';
   
-  const { webProjects, softwareProjects, androidProjects, freelanceProjects } =
+  const { MLProjects, DLProjects, androidProjects, freelanceProjects } =
     projects;
   const { medium, gitConnected } = URLs;
   
@@ -298,72 +300,118 @@ import { URLs } from './user-data/urls.js';
    */
   function populateExp_Edu(items, id) {
     let mainContainer = document.getElementById(id);
-  
+
+    // Loop through each item in the array
     for (let i = 0; i < items.length; i++) {
-      let spanTimelineSublabel = document.createElement("span");
-      spanTimelineSublabel.className = "timeline-sublabel";
-      spanTimelineSublabel.innerHTML = items[i].subtitle;
-  
-      let spanh2 = document.createElement("span");
-      spanh2.innerHTML = items[i].duration;
-  
-      let h2TimelineLabel = document.createElement("h2");
-      h2TimelineLabel.innerHTML = items[i].title;
-      h2TimelineLabel.append(spanh2);
-  
-      let divTimelineLabel = document.createElement("div");
-      divTimelineLabel.className = "timeline-label";
-      divTimelineLabel.append(h2TimelineLabel);
-      divTimelineLabel.append(spanTimelineSublabel);
-  
-      for (let j = 0; j < items[i].details.length; j++) {
-        let pTimelineText = document.createElement("p");
-        pTimelineText.className = "timeline-text";
-        pTimelineText.innerHTML = "&blacksquare; " + items[i].details[j];
-        divTimelineLabel.append(pTimelineText);
-      }
-  
-      let divTags = document.createElement("div");
-      for (let j = 0; j < items[i].tags.length; j++) {
-        let spanTags = document.createElement("span");
-        spanTags.className = "badge";
-        spanTags.innerHTML = items[i].tags[j];
-        divTags.append(spanTags);
-      }
-      divTimelineLabel.append(divTags);
-  
-      let iFa = document.createElement("i");
-      iFa.className = "fa fa-" + items[i].icon;
-  
-      let divTimelineIcon = document.createElement("div");
-      divTimelineIcon.className = "timeline-icon color-2";
-      divTimelineIcon.append(iFa);
-  
-      let divTimelineEntryInner = document.createElement("div");
-      divTimelineEntryInner.className = "timeline-entry-inner";
-      divTimelineEntryInner.append(divTimelineIcon);
-      divTimelineEntryInner.append(divTimelineLabel);
-  
-      let article = document.createElement("article");
-      article.className = "timeline-entry animate-box";
-      article.append(divTimelineEntryInner);
-  
-      mainContainer.append(article);
+        // Create the subtitle span
+        let spanTimelineSublabel = document.createElement("span");
+        spanTimelineSublabel.className = "timeline-sublabel";
+        spanTimelineSublabel.innerHTML = items[i].subtitle;
+
+        // Create the duration span
+        let spanh2 = document.createElement("span");
+        spanh2.innerHTML = items[i].duration;
+
+        // Create the title and append duration
+        let h2TimelineLabel = document.createElement("h2");
+        h2TimelineLabel.innerHTML = items[i].title;
+        h2TimelineLabel.append(spanh2);
+
+        // Create the main timeline label div and append title and subtitle
+        let divTimelineLabel = document.createElement("div");
+        divTimelineLabel.className = "timeline-label";
+        divTimelineLabel.append(h2TimelineLabel);
+        divTimelineLabel.append(spanTimelineSublabel);
+
+        // Loop through the details array and create paragraphs
+        for (let j = 0; j < items[i].details.length; j++) {
+            let pTimelineText = document.createElement("p");
+            pTimelineText.className = "timeline-text";
+
+            // Check if detail is a link
+            if (items[i].details[j].includes("http")) {
+                let aTag = document.createElement("a");
+                aTag.href = items[i].details[j];
+                aTag.target = "_blank";
+                aTag.className = "timeline-link";
+                aTag.innerHTML = "&blacksquare; " + items[i].details[j];
+                pTimelineText.appendChild(aTag);
+            } else {
+                pTimelineText.innerHTML = "&blacksquare; " + items[i].details[j];
+            }
+            divTimelineLabel.append(pTimelineText);
+        }
+
+        // Create tags if available
+        let divTags = document.createElement("div");
+        for (let j = 0; j < items[i].tags.length; j++) {
+            let spanTags = document.createElement("span");
+            spanTags.className = "badge";
+            spanTags.innerHTML = items[i].tags[j];
+            divTags.append(spanTags);
+        }
+        divTimelineLabel.append(divTags);
+
+        // Add icon if available
+        let iFa = document.createElement("i");
+        iFa.className = "fa fa-" + items[i].icon;
+
+        let divTimelineIcon = document.createElement("div");
+        divTimelineIcon.className = "timeline-icon color-2";
+        divTimelineIcon.append(iFa);
+
+        // Create the inner timeline entry div
+        let divTimelineEntryInner = document.createElement("div");
+        divTimelineEntryInner.className = "timeline-entry-inner";
+        divTimelineEntryInner.append(divTimelineIcon);
+        divTimelineEntryInner.append(divTimelineLabel);
+
+        // Create the article and append the inner div
+        let article = document.createElement("article");
+        article.className = "timeline-entry animate-box";
+        article.append(divTimelineEntryInner);
+
+        // Add link section last if available
+        if (items[i].links && items[i].links.length > 0) {
+            let divLinks = document.createElement("div");
+            divLinks.className = "timeline-links";
+
+            // Create each link
+            for (let j = 0; j < items[i].links.length; j++) {
+                let aLink = document.createElement("a");
+                aLink.href = items[i].links[j].url;
+                aLink.target = "_blank";
+                aLink.className = "timeline-link";
+                aLink.innerHTML = items[i].links[j].text;
+
+                // Append the link to the div
+                divLinks.appendChild(aLink);
+            }
+
+            // Append the links section to the divTimelineLabel
+            divTimelineLabel.appendChild(divLinks);
+        }
+
+        // Append the article to the main container
+        mainContainer.append(article);
     }
-  
+
+    // Add a final ending marker
     let divTimelineIcon = document.createElement("div");
     divTimelineIcon.className = "timeline-icon color-2";
-  
+
     let divTimelineEntryInner = document.createElement("div");
     divTimelineEntryInner.className = "timeline-entry-inner";
     divTimelineEntryInner.append(divTimelineIcon);
-  
+
     let article = document.createElement("article");
     article.className = "timeline-entry begin animate-box";
     article.append(divTimelineEntryInner);
-  
+
+    // Append the final article to the container
     mainContainer.append(article);
-  }
+}
+
   
   /**
    * Populate links in the specified footer section with provided data.
@@ -468,7 +516,9 @@ import { URLs } from './user-data/urls.js';
       return (years == 1) ? `${years} year ago` : `${years} years ago`;
     }
   }
-  
+
+
+
   populateBio(bio, "bio");
   
   populateSkills(skills, "skills");
@@ -476,13 +526,15 @@ import { URLs } from './user-data/urls.js';
   fetchBlogsFromMedium(medium);
   fetchGitConnectedData(gitConnected);
   
-  populateProjects(webProjects, "web-projects");
-  populateProjects(softwareProjects, "software-projects");
-  populateProjects(androidProjects, "android-projects");
-  populateProjects(freelanceProjects, "freelance-projects");
-  
+  populateProjects(MLProjects, "ML-projects");
+  populateProjects(DLProjects, "DL-projects");
+
   populateExp_Edu(experience, "experience");
   populateExp_Edu(education, "education");
+  populateExp_Edu(training, "training");
+  populateExp_Edu(publications, "publications");
+
+
   
   populateLinks(footer, "footer");
   
