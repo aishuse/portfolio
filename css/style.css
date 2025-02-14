@@ -158,8 +158,8 @@ figure figcaption {
 .resume-content img {
 	margin: 0 10px;
 	width: 100%;
-	max-width: 150px;
-	max-height: 100px;
+	max-width: 15%;
+	max-height: 15%;
 	height: auto;
 }
 #colorlib-aside .author-img {
@@ -702,6 +702,7 @@ body.offcanvas .colorlib-nav-toggle {
 
 .project-image {
 	float: left;
+	width: 50px;
 }
 /* 
 .project-card {

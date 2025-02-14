@@ -55,25 +55,52 @@ export const skills = [
 
 export const projects = {
   MLProjects: [
-    // {
-    //   projectName: "",
-    //   image: "",
-    //   summary:
-    //     "",
-    //   preview: "",
-    //   techStack: [],
-    // },
+     {
+      projectName: "More Projects",
+      image: "images/git.webp",
+      summary:
+        "Find more projects here",
+      preview: "https://github.com/aishuse/Machine-Learning-Projects",
+      techStack: ["Tensorflow", "Keras", "Python", "Streamlit"],
+    },
+
+  ],
+   NLPProjects: [
+       {
+      projectName: "FAKE NEWS DETECTION",
+      image: "images/fake.jpg",
+      summary:
+        "FAKE NEWS DETECTION",
+      preview: "https://fake-news-detection-plyhsavfj6yhmrrgzezmaa.streamlit.app/",
+      techStack: ["TF-IDF", "", "Python", "Streamlit"],
+    },
+     {
+      projectName: "More Projects",
+      image: "images/git.webp",
+      summary:
+        "Find more projects here",
+      preview: "https://github.com/aishuse/NLP-Projects",
+      techStack: ["Tensorflow", "Keras", "Python", "Streamlit"],
+    },
 
   ],
   DLProjects: [
-    // {
-    //   projectName: "",
-    //   image: "images/.png",
-    //   summary:
-    //     "",
-    //   techStack: [],
-    // },
-
+     {
+      projectName: "Diabetes Prediction using ANN",
+      image: "images/img.webp",
+      summary:
+        "Diabetes Prediction using ANN      | Click here",
+      preview: "https://aiswarya.streamlit.app/",
+      techStack: ["Tensorflow", "Keras", "Python", "Streamlit"],
+    },
+     {
+      projectName: "More Projects",
+      image: "images/git.webp",
+      summary:
+        "Find more projects here",
+      preview: "https://github.com/aishuse/DeepLearning-Projects",
+      techStack: ["Tensorflow", "Keras", "Python", "Streamlit"],
+    },
   ],
 
 };

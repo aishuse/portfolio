@@ -11,7 +11,7 @@ import {
 
 import { URLs } from './user-data/urls.js';
   
-  const { MLProjects, DLProjects, androidProjects, freelanceProjects } =
+  const { MLProjects, DLProjects, NLPProjects, freelanceProjects } =
     projects;
   const { medium, gitConnected } = URLs;
   
@@ -527,6 +527,8 @@ import { URLs } from './user-data/urls.js';
   fetchGitConnectedData(gitConnected);
   
   populateProjects(MLProjects, "ML-projects");
+  populateProjects(NLPProjects, "NLP-projects");
+
   populateProjects(DLProjects, "DL-projects");
 
   populateExp_Edu(experience, "experience");
