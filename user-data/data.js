@@ -60,7 +60,7 @@ export const projects = {
       image: "images/house.jpg",
       summary:
         "House Price Prediction   | Click here",
-      preview: "https://diabetes-pred-ais.streamlit.app/",
+      preview: "https://house-price-pred-blr-ais.streamlit.app/",
       techStack: ["Tensorflow", "Keras", "Python", "Streamlit"],
     },
      {
