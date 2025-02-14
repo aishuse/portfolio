@@ -55,6 +55,14 @@ export const skills = [
 
 export const projects = {
   MLProjects: [
+    {
+      projectName: "House price",
+      image: "images/house.jpg",
+      summary:
+        "House Price Prediction   | Click here",
+      preview: "https://diabetes-pred-ais.streamlit.app/",
+      techStack: ["Tensorflow", "Keras", "Python", "Streamlit"],
+    },
      {
       projectName: "More Projects",
       image: "images/git.webp",
@@ -71,7 +79,7 @@ export const projects = {
       image: "images/fake.jpg",
       summary:
         "FAKE NEWS DETECTION",
-      preview: "https://fake-news-detection-plyhsavfj6yhmrrgzezmaa.streamlit.app/",
+      preview: "https://fake-news-detection-ais.streamlit.app/",
       techStack: ["TF-IDF", "", "Python", "Streamlit"],
     },
      {
@@ -90,7 +98,7 @@ export const projects = {
       image: "images/img.webp",
       summary:
         "Diabetes Prediction using ANN      | Click here",
-      preview: "https://aiswarya.streamlit.app/",
+      preview: "https://diabetes-pred-ais.streamlit.app/",
       techStack: ["Tensorflow", "Keras", "Python", "Streamlit"],
     },
      {
