@@ -6,6 +6,7 @@ import {
     training,
     experience,
     publications,
+    certifications,
     footer,
   } from "./user-data/data.js";
 
@@ -536,6 +537,7 @@ import { URLs } from './user-data/urls.js';
   populateExp_Edu(training, "training");
   populateExp_Edu(publications, "publications");
 
+  populateExp_Edu(certifications, "certifications");
 
   
   populateLinks(footer, "footer");

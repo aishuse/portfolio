@@ -133,7 +133,7 @@ figure figcaption {
 	width: 300px;
 	position: fixed;
 	z-index: 1001;
-	background-color: #caeded;
+	background-color: #a8cfef;
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s;
 	transition: 0.5s;
@@ -175,7 +175,7 @@ figure figcaption {
 }
 
 #colorlib-aside .author-img img{
-	height: 100%; 
+	height: 120%;
     object-fit: contain;
 	padding: 30px;
 }
@@ -827,7 +827,7 @@ body.offcanvas .colorlib-nav-toggle {
 	position: absolute;
 	display: block;
 	width: 4px;
-	background: #dcffd1;
+	background: #d1e5ee;
 	top: 20px;
 	bottom: 20px;
 	margin-left: 29px;
@@ -873,7 +873,7 @@ body.offcanvas .colorlib-nav-toggle {
 	.timeline-entry
 	.timeline-entry-inner
 	.timeline-icon.color-3 {
-	background: #dcffd1;
+	background: #d1e5ee;
 }
 .timeline-centered
 	.timeline-entry
@@ -899,7 +899,7 @@ body.offcanvas .colorlib-nav-toggle {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
 	position: relative;
-	background: #dcffd1;
+	background: #d1e5ee;
 	color: #000;
 	padding: 1.5em;
 	margin-left: 60px;
@@ -991,10 +991,10 @@ body.offcanvas .colorlib-nav-toggle {
 	color: #ec5453;
 }
 .services.color-3 {
-	border-bottom: 2px solid #dcffd1;
+	border-bottom: 2px solid #d1e5ee;
 }
 .services.color-3 .icon2 i {
-	color: #dcffd1;
+	color: #d1e5ee;
 }
 .services.color-4 {
 	border-bottom: 2px solid #a84cb8;
@@ -1085,13 +1085,13 @@ body.offcanvas .colorlib-nav-toggle {
 	border-color: #ec5453 transparent transparent transparent;
 }
 .services.color-3 .icon {
-	background: #dcffd1;
+	background: #d1e5ee;
 }
 .services.color-3 .icon:before {
-	border-color: transparent transparent #dcffd1 transparent;
+	border-color: transparent transparent #d1e5ee transparent;
 }
 .services.color-3 .icon:after {
-	border-color: #dcffd1 transparent transparent transparent;
+	border-color: #d1e5ee transparent transparent transparent;
 }
 .services.color-4 .icon {
 	background: #a84cb8;
@@ -1189,13 +1189,13 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .progress-bar.color-3 {
-	background:#dcffd1;
+	background:#d1e5ee;
 }
 .progress-bar.color-3:after {
-	background: #dcffd1;
+	background: #d1e5ee;
 }
 .progress-bar.color-3 span {
-	color: #dcffd1;
+	color: #d1e5ee;
 }
 .progress-bar.color-4 {
 	background: #a84cb8;
@@ -1234,13 +1234,13 @@ body.offcanvas .colorlib-nav-toggle {
 	color: #ec5453;
 }
 .progress-bar.color-8 {
-	background: #dcffd1;
+	background: #d1e5ee;
 }
 .progress-bar.color-8:after {
-	background: #dcffd1;
+	background: #d1e5ee;
 }
 .progress-bar.color-8 span {
-	color: #dcffd1;
+	color: #d1e5ee;
 }
 .progress-bar.color-9 {
 	background: #a84cb8;
@@ -2003,7 +2003,7 @@ ul {
 	padding-left: 20px;
 	padding-right: 20px;
 	/* margin: 30px auto 20px; */
-	background: #dcffd1;
+	background: #d1e5ee;
 	color: #000;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -2056,7 +2056,7 @@ ul {
 
 .submenu {
 	display: none;
-	background: #dcffd1;
+	background: #d1e5ee;
 	font-size: 14px;
 	padding-left: 0px;
 	padding-top: 10px;
@@ -2169,7 +2169,7 @@ span {
 }
 
 :root {
-	--footer-bg: #dcffd1;
+	--footer-bg: #d1e5ee;
 	--color: #000;
 	--color-smooth: #000;
 	--input-border: #3a456a;

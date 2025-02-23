@@ -1,11 +1,9 @@
 export const bio = [
+  "I am a <strong>data science enthusiast</strong> with a strong foundation in <strong>Python, machine learning, and big data technologies</strong>. With over <strong>two years of experience</strong> as a <strong>Python Django Developer</strong>, I have designed and maintained <strong>scalable web applications</strong>. My academic background has equipped me with expertise in <strong>machine learning, deep learning, and natural language processing</strong>, focusing on <strong>predictive modeling, text analysis, and AI-driven solutions</strong>.<br><br>" +
 
-  " I'm Aiswarya Baby, Skilled software engineer with over 2 years of experience" +
-  " in Python and Django development, along with experience" +
-  " teaching coding to young students. I am also highly interested in the field of data science " +
-  "and am actively exploring opportunities to expand my knowledge and skills in this area. " +
-  "I'm eager to learn more about data science and apply it to solve real-world problems.",
+  "I am proficient in <strong>SQL</strong>, <strong>data visualization</strong> (<em>Power BI, Matplotlib, Pandas</em>), and <strong>big data tools</strong> like <strong>Hadoop, Spark, and Hive</strong> for large-scale data processing. With <strong>strong analytical thinking</strong> and <strong>problem-solving skills</strong>, I am eager to apply my knowledge to <strong>real-world challenges</strong>, collaborate with <strong>cross-functional teams</strong>, and contribute to <strong>data-driven decision-making</strong>. I am actively seeking opportunities to grow and make an impact in the field of <strong>data science</strong>."
 ];
+
 
 export const skills = [
   {
@@ -16,7 +14,7 @@ export const skills = [
   },
   {
     title: "Frameworks/Libraries",
-    skillName: "Django, Pandas, Numpy",
+    skillName: "Django, Pandas, Numpy, Tensorflow, Keras",
     color: "2",
     percentage: "70",
   },
@@ -42,7 +40,7 @@ export const skills = [
     title: "Data Science",
     skillName: "MachineLearning, DeepLearning, NLP",
     color: "6",
-    percentage: "50",
+    percentage: "70",
   },
   {
     title: "Big Data Technologies",
@@ -118,8 +116,8 @@ export const experience = [
     title: "SayOne Technologies ",
     duration: "November 2021 - August 2024",
     subtitle: "Software Engineer",
-    details: ["Python -Django Developer"],
-    tags: ["Python", "Django", "Javascript"],
+    details: [" Designed, enhanced, and maintained scalable web applications using Django and Python.\n"],
+    tags: ["Python", "Django", "Javascript","DjangoREST"],
     icon: "truck ",
   },
   {
@@ -127,8 +125,7 @@ export const experience = [
     duration: "August 2021 - January 2024",
     subtitle: "Coding Instructor",
     details: [
-      `Taught young students the basics of coding, focusing on
- fundamental programming concepts and skills.`,
+      "Taught Python, Machine Learning, AI, and web development basics to over 25+ young students.",
 
     ],
     tags: [
@@ -170,21 +167,19 @@ export const experience = [
 export const education = [
     {
     title: "Pursuing Masters in Data Science and Analytics",
-    duration: "2024 - 2025",
-    subtitle: "Toronto Metropolitan University",
+    duration: "September 2024 - August 2025",
+    subtitle: "Toronto Metropolitan University, ON, Canada",
     details: [],
     tags: [
-      "Machine Learning",
-      "Des Algorithms and Programming",
-      "Mgt of Big Data and Tools",
+       "Machine Learning", "Deep Learning", "NLP", "Data Mining", "Big Data & Tools", "Des Algorithm & Programming"
        ],
     icon: "graduation-cap",
   },
 
     {
     title: "M.Tech. in Computer Science and Information Systems",
-    duration: "2015 - 2017",
-    subtitle: "APJ Abdul Kalam Technological University",
+    duration: "Aug 2015 - May 2017",
+    subtitle: "APJ Abdul Kalam Technological University, Kerala, India",
     details: [],
     tags: [
           ],
@@ -192,8 +187,8 @@ export const education = [
   },
   {
     title: "B.Tech. in Computer Science and Engineering",
-    duration: "2009 - 2013",
-    subtitle: "MG University",
+    duration: "Aug 2009 - May 2013",
+    subtitle: "Mahatma Gandhi University, Kerala, India",
     details: [],
     tags: [
           ],
@@ -207,7 +202,7 @@ export const training = [
 
     {
     title: " Web Application Development",
-    duration: "2013 - 2014",
+    duration: "2014 - 2015",
     subtitle: "Keltron",
     details: [],
     tags: [
@@ -238,7 +233,176 @@ export const training = [
 
 ];
 
+
+export const certifications = [
+
+    {
+    title: " Big Data Analytics & Data Science ",
+    duration: "2023",
+    subtitle: "National Council for Technology and Training",
+    details: [
+        "Credential ID: 44497"
+    ],
+    tags: [
+          ],
+    links: [
+            { url: "images/datascience.pdf", text: "View Certificate" },
+        ],
+    icon: "book",
+  },
+    {
+    title: "Python - Web Development Expert ",
+    duration: "2021",
+    subtitle: "National Council for Technology and Training",
+    details: [
+        "Credential ID: 30386"
+    ],
+    tags: [
+          ],
+    links: [
+            { url: "images/python.pdf", text: "View Certificate" },
+        ],
+    icon: "book",
+  },
+
+        {
+    title: "Databases and SQL for Data Science with Python ",
+    duration: "2023",
+    subtitle: "Coursera",
+    details: [
+
+    ],
+    tags: [
+          ],
+    links: [
+            { url: "https://www.coursera.org/account/accomplishments/certificate/2VUGPPTKVNEX", text: "View Certificate" },
+        ],
+    icon: "book",
+  },
+
+   {
+    title:  "Tools for Data Science ",
+    duration: "2023",
+    subtitle: "Coursera",
+    details: [
+
+    ],
+    tags: [
+          ],
+    links: [
+            { url: "https://www.coursera.org/account/accomplishments/certificate/623RC6GJTBXA", text: "View Certificate" },
+        ],
+    icon: "book",
+  },
+
+     {
+    title:  "Python Project for Data Science",
+    duration: "2023",
+    subtitle: "Coursera",
+    details: [
+
+    ],
+    tags: [
+          ],
+    links: [
+            { url: "https://www.coursera.org/account/accomplishments/certificate/BURQDFW7YCTH", text: "View Certificate" },
+        ],
+    icon: "book",
+  },
+
+         {
+    title:  " Python for Data Science, AI & Development",
+    duration: "2021",
+    subtitle: "Coursera",
+    details: [
+
+    ],
+    tags: [
+          ],
+    links: [
+            { url: "https://www.coursera.org/account/accomplishments/certificate/Y9QQH7BTLBNW", text: "View Certificate" },
+        ],
+    icon: "book",
+  },
+
+             {
+    title:  "What is Data Science?",
+    duration: "2021",
+    subtitle: "Coursera",
+    details: [
+
+    ],
+    tags: [
+          ],
+    links: [
+            { url: "https://www.coursera.org/account/accomplishments/certificate/5NNTWSDMAS2N", text: "View Certificate" },
+        ],
+    icon: "book",
+  },
+
+       {
+    title:  "Python (Basic)",
+    duration: "2021",
+    subtitle: "Hackerrank",
+    details: [
+
+    ],
+    tags: [
+          ],
+    links: [
+            { url: "https://www.hackerrank.com/certificates/ea6639104a36", text: "View Certificate" },
+        ],
+    icon: "book",
+  },
+
+       {
+    title:  "SQL (Basic)",
+    duration: "2021",
+    subtitle: "Hackerrank",
+    details: [
+
+    ],
+    tags: [
+          ],
+    links: [
+            { url: "https://www.hackerrank.com/certificates/288aa8e0cb54", text: "View Certificate" },
+        ],
+    icon: "book",
+  },
+
+      {
+    title:  "Web Application Development",
+    duration: "2015",
+    subtitle: "Keltron",
+    details: [
+
+    ],
+    tags: [
+          ],
+    links: [
+            { url: "images/keltron.pdf", text: "View Certificate" },
+        ],
+    icon: "book",
+  },
+
+];
+
+
+
 export const publications = [
+
+  {
+    title: " Exploring Advanced Techniques for Visual Question Answering: A Comprehensive Comparison",
+    duration: "February 2025",
+    subtitle: "arXiv",
+    links: [
+            { url: "https://arxiv.org/abs/2502.14827 ", text: "Visit publication" },
+        ],
+    details: [],
+    tags: [
+          ],
+    icon: "book",
+  },
 
     {
     title: " Combined Strength of Cryptography and steganography - A Literature Survey",
@@ -283,7 +447,11 @@ export const footer = [
         text: "Linkedin",
         link: "https://www.linkedin.com/in/aiswarya-baby/",
       },
+              {
+        text: "Email: babyaiswarya180@gmail.com ",
+      },
     ],
+
   },
   {
     label: "Resources",
