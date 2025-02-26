@@ -72,13 +72,21 @@ export const projects = {
 
   ],
    NLPProjects: [
+    {
+      projectName: "Next word prediction",
+      image: "images/img1.webp",
+      summary:
+        "NEXT WORD PREDICTION",
+      preview: "https://next-word-pred-ais.streamlit.app/",
+      techStack: ["GRU", "Tensorflow", "Python", "Streamlit"],
+    },
        {
       projectName: "FAKE NEWS DETECTION",
       image: "images/fake.jpg",
       summary:
         "FAKE NEWS DETECTION",
       preview: "https://fake-news-detection-ais.streamlit.app/",
-      techStack: ["TF-IDF", "", "Python", "Streamlit"],
+      techStack: ["TF-IDF", "Tensorflow", "Python", "Streamlit"],
     },
      {
       projectName: "More Projects",
