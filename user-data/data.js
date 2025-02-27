@@ -107,6 +107,14 @@ export const projects = {
       preview: "https://diabetes-pred-ais.streamlit.app/",
       techStack: ["Tensorflow", "Keras", "Python", "Streamlit"],
     },
+           {
+      projectName: "Brain Tumor Classification",
+      image: "images/brain.webp",
+      summary:
+        "Brain Tumor Classification using CNN      | Click here",
+      preview: "https://brain-tumor-class-ais.streamlit.app/",
+      techStack: ["Tensorflow", "OpenCV", "Python", "Streamlit"],
+    },
      {
       projectName: "More Projects",
       image: "images/git.webp",
