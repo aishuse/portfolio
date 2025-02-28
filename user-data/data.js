@@ -38,7 +38,7 @@ export const skills = [
   },
   {
     title: "Data Science",
-    skillName: "MachineLearning, DeepLearning, NLP",
+    skillName: "Machine Learning, Deep Learning, NLP",
     color: "6",
     percentage: "70",
   },
@@ -52,25 +52,7 @@ export const skills = [
 ];
 
 export const projects = {
-  MLProjects: [
-    {
-      projectName: "House price",
-      image: "images/house.jpg",
-      summary:
-        "House Price Prediction   | Click here",
-      preview: "https://house-price-pred-blr-ais.streamlit.app/",
-      techStack: ["Tensorflow", "Keras", "Python", "Streamlit"],
-    },
-     {
-      projectName: "More Projects",
-      image: "images/git.webp",
-      summary:
-        "Find more projects here",
-      preview: "https://github.com/aishuse/Machine-Learning-Projects",
-      techStack: ["Tensorflow", "Keras", "Python", "Streamlit"],
-    },
 
-  ],
    NLPProjects: [
     {
       projectName: "Next word prediction",
@@ -124,7 +106,25 @@ export const projects = {
       techStack: ["Tensorflow", "Keras", "Python", "Streamlit"],
     },
   ],
+  MLProjects: [
+    {
+      projectName: "House price",
+      image: "images/house.jpg",
+      summary:
+        "House Price Prediction   | Click here",
+      preview: "https://house-price-pred-blr-ais.streamlit.app/",
+      techStack: ["Tensorflow", "Keras", "Python", "Streamlit"],
+    },
+     {
+      projectName: "More Projects",
+      image: "images/git.webp",
+      summary:
+        "Find more projects here",
+      preview: "https://github.com/aishuse/Machine-Learning-Projects",
+      techStack: ["Tensorflow", "Keras", "Python", "Streamlit"],
+    },
 
+  ],
 };
 
 export const experience = [
