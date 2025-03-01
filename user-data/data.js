@@ -216,25 +216,7 @@ export const education = [
 
 export const training = [
 
-    {
-    title: " Web Application Development",
-    duration: "2014 - 2015",
-    subtitle: "Keltron",
-    details: [],
-    tags: [
-          ],
-    icon: "graduation-cap",
-  },
 
-    {
-    title: " Python/Django Training, Luminar Technolab",
-    duration: "2021",
-    subtitle: "Luminar Technolab",
-    icon: "graduation-cap",
-    details: [],
-    tags: [
-          ],
-  },
   {
     title: "Big Data and Data Science Training",
     duration: "2023",
@@ -245,6 +227,25 @@ export const training = [
           ],
             link: "https://www.linkedin.com/in/aiswarya-baby/",
 
+  },
+    {
+    title: " Python/Django Training, Luminar Technolab",
+    duration: "2021",
+    subtitle: "Luminar Technolab",
+    icon: "graduation-cap",
+    details: [],
+    tags: [
+          ],
+  },
+
+       {
+    title: " Web Application Development",
+    duration: "2014 - 2015",
+    subtitle: "Keltron",
+    details: [],
+    tags: [
+          ],
+    icon: "graduation-cap",
   },
 
 ];
