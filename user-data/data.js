@@ -14,7 +14,7 @@ export const skills = [
   },
   {
     title: "Frameworks/Libraries",
-    skillName: "Django, Pandas, Numpy, Tensorflow, Keras",
+    skillName: "Django, Pandas, Numpy, Tensorflow, Keras, Pytorch",
     color: "2",
     percentage: "70",
   },
@@ -54,6 +54,14 @@ export const skills = [
 export const projects = {
 
    NLPProjects: [
+    {
+      projectName: "Question Answering",
+      image: "images/qa.jpg",
+      summary:
+        "Question answering-T5 FineTuning",
+      preview: "https://question-answering-ais.streamlit.app/",
+      techStack: ["T5", "Pytorch", "Python", "Streamlit"],
+    },
     {
       projectName: "Next word prediction",
       image: "images/img1.webp",
