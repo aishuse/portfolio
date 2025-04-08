@@ -1,7 +1,7 @@
 export const bio = [
-  "I am a <strong>data science enthusiast</strong> with a strong foundation in <strong>Python, machine learning, and big data technologies</strong>. With over <strong>two years of experience</strong> as a <strong>Python Django Developer</strong>, I have designed and maintained <strong>scalable web applications</strong>. My academic background has equipped me with expertise in <strong>machine learning, deep learning, and natural language processing</strong>, focusing on <strong>predictive modeling, text analysis, and AI-driven solutions</strong>.<br><br>" +
+  "I am a <strong style='color: #FF6347;'>data science enthusiast</strong> with a strong foundation in <strong style='color: #FF6347;'> machine learning, deep learning and big data technologies</strong>. With over <strong style='color: #FF6347;'>two years of experience</strong> as a <strong style='color: #FF6347;'>Python Django Developer</strong>, I have designed and maintained <strong style='color: #FF6347;'>scalable web applications</strong>. My academic background has equipped me with expertise in <strong style='color: #FF6347;'>machine learning, deep learning, and natural language processing</strong>, focusing on <strong style='color: #FF6347;'>predictive modeling, text analysis, and AI-driven solutions</strong>.<br><br>" +
 
-  "I am proficient in <strong>SQL</strong>, <strong>data visualization</strong> (<em>Power BI, Matplotlib, Pandas</em>), and <strong>big data tools</strong> like <strong>Hadoop, Spark, and Hive</strong> for large-scale data processing. With <strong>strong analytical thinking</strong> and <strong>problem-solving skills</strong>, I am eager to apply my knowledge to <strong>real-world challenges</strong>, collaborate with <strong>cross-functional teams</strong>, and contribute to <strong>data-driven decision-making</strong>. I am actively seeking opportunities to grow and make an impact in the field of <strong>data science</strong>."
+  "I am proficient in <strong style='color: #FF6347;'>SQL</strong>, <strong style='color: #FF6347;'>data visualization</strong> (<em>Power BI, Matplotlib, Seaborn</em>), and <strong style='color: #FF6347;'>big data tools</strong> like <strong style='color: #FF6347;'>Hadoop, Spark, and Hive</strong> for large-scale data processing. With <strong style='color: #FF6347;'>strong analytical thinking</strong> and <strong style='color: #FF6347;'>problem-solving skills</strong>, I am eager to apply my knowledge to <strong style='color: #FF6347;'>real-world challenges</strong>, collaborate with <strong style='color: #FF6347;'>cross-functional teams</strong>, and contribute to <strong style='color: #FF6347;'>data-driven decision-making</strong>. I am actively seeking opportunities to grow and make an impact in the field of <strong style='color: #FF6347;'>data science</strong>."
 ];
 
 
@@ -14,16 +14,16 @@ export const skills = [
   },
   {
     title: "Frameworks/Libraries",
-    skillName: "Django, Pandas, Numpy, Tensorflow, Keras, Pytorch",
+    skillName: "Django, Pandas, Numpy, Tensorflow, Keras",
     color: "2",
     percentage: "70",
   },
-  {
-    title: "Design",
-    skillName: "HTML, Bootstrap, CSS",
-    color: "3",
-    percentage: "70",
-  },
+  // {
+  //   title: "Design",
+  //   skillName: "HTML, Bootstrap, CSS",
+  //   color: "3",
+  //   percentage: "70",
+  // },
   {
     title: " Data Analysis & Visualization",
     skillName: "PowerBi",
@@ -45,7 +45,7 @@ export const skills = [
   {
     title: "Big Data Technologies",
     skillName: "Hive, Pig, Hadoop, Spark",
-    color: "7",
+    color: "11",
     percentage: "60",
   },
 
@@ -483,7 +483,7 @@ export const footer = [
     data: [
       {
         text: "Enable Dark/Light Mode",
-        func: "enableDarkMode()",
+        func: "enableLightMode()",
       },
       {
         text: "Print this page",
