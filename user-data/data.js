@@ -1,8 +1,17 @@
 export const bio = [
   "I am a <strong style='color: #FF6347;'>data science enthusiast</strong> with a strong foundation in <strong style='color: #FF6347;'> machine learning, deep learning and big data technologies</strong>. With over <strong style='color: #FF6347;'>two years of experience</strong> as a <strong style='color: #FF6347;'>Python Django Developer</strong>, I have designed and maintained <strong style='color: #FF6347;'>scalable web applications</strong>. My academic background has equipped me with expertise in <strong style='color: #FF6347;'>machine learning, deep learning, and natural language processing</strong>, focusing on <strong style='color: #FF6347;'>predictive modeling, text analysis, and AI-driven solutions</strong>.<br><br>" +
 
-  "I am proficient in <strong style='color: #FF6347;'>SQL</strong>, <strong style='color: #FF6347;'>data visualization</strong> (<em>Power BI, Matplotlib, Seaborn</em>), and <strong style='color: #FF6347;'>big data tools</strong> like <strong style='color: #FF6347;'>Hadoop, Spark, and Hive</strong> for large-scale data processing. With <strong style='color: #FF6347;'>strong analytical thinking</strong> and <strong style='color: #FF6347;'>problem-solving skills</strong>, I am eager to apply my knowledge to <strong style='color: #FF6347;'>real-world challenges</strong>, collaborate with <strong style='color: #FF6347;'>cross-functional teams</strong>, and contribute to <strong style='color: #FF6347;'>data-driven decision-making</strong>. I am actively seeking opportunities to grow and make an impact in the field of <strong style='color: #FF6347;'>data science</strong>."
+  "I am proficient in <strong style='color: #FF6347;'>SQL</strong>, <strong style='color: #FF6347;'>data visualization</strong> (<em>Power BI, Matplotlib, Seaborn</em>), and <strong style='color: #FF6347;'>big data tools</strong> like <strong style='color: #FF6347;'>Hadoop, Spark, and Hive</strong> for large-scale data processing. With <strong style='color: #FF6347;'>strong analytical thinking</strong> and <strong style='color: #FF6347;'>problem-solving skills</strong>, I am eager to apply my knowledge to <strong style='color: #FF6347;'>real-world challenges</strong>, collaborate with <strong style='color: #FF6347;'>cross-functional teams</strong>, and contribute to <strong style='color: #FF6347;'>data-driven decision-making</strong>. I am actively seeking opportunities to grow and make an impact in the field of <strong style='color: #FF6347;'>data science</strong>.<br><br>" +
+
+  "<span style='font-size: 18px;'>Want to know more about me? 🤖 " +
+  "<a href='https://my-assistant-chatbot.streamlit.app/' target='_blank' style='color: #00FFFF; font-weight: bold; text-decoration: none;'>" +
+  "Ask my AI chatbot!</a></span>" +
+        "<img src='https://img.icons8.com/fluency/24/robot-2.png' alt='chatbot icon' style='vertical-align: middle; margin-right: 6px;'/>"
+
 ];
+
+
+
 
 
 export const skills = [
