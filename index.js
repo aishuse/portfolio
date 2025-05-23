@@ -12,7 +12,7 @@ import {
 
 import { URLs } from './user-data/urls.js';
   
-  const { MLProjects, DLProjects, NLPProjects, freelanceProjects } =
+  const { LangChainProjects,MLProjects, DLProjects, NLPProjects, freelanceProjects } =
     projects;
   const { medium, gitConnected } = URLs;
   
@@ -529,8 +529,9 @@ import { URLs } from './user-data/urls.js';
   
   populateProjects(MLProjects, "ML-projects");
   populateProjects(NLPProjects, "NLP-projects");
+    populateProjects(DLProjects, "DL-projects");
 
-  populateProjects(DLProjects, "DL-projects");
+  populateProjects(LangChainProjects, "Langchain-projects");
 
   populateExp_Edu(experience, "experience");
   populateExp_Edu(education, "education");

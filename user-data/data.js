@@ -61,7 +61,25 @@ export const skills = [
 ];
 
 export const projects = {
+    LangChainProjects: [
+        {
+          projectName: "YT-TranscriptBot",
+          image: "images/yt.jpeg",
+          summary:
+            "YT-TranscriptBot: Smart Q&A from Video Transcripts using FAISS + Groq   | Click here",
+          preview: "https://youtube-transcript-chat.streamlit.app/",
+          techStack: ["LangChain ", "RAG", "Python", "Groq","FAISS"],
+        },
+         {
+          projectName: "My AI Assistant | Click here",
+          image: "images/cht.png",
+          summary:
+            "Personalized AI assistant chatbot using LangChain and Streamlit to deliver real-time, context-aware responses about me.",
+          preview: "https://my-assistant-chatbot.streamlit.app/",
+          techStack: ["LangChain", "Groq", "Python", "Streamlit"],
+        },
 
+      ],
    NLPProjects: [
     {
       projectName: "Question Answering",
