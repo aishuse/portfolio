@@ -163,8 +163,8 @@ figure figcaption {
 	height: auto;
 }
 #colorlib-aside .author-img {
-	width: 0px;
-	height: 0px;
+	width: 150px;
+	height: 150px;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	-webkit-border-radius: 50%;
