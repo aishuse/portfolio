@@ -63,6 +63,14 @@ export const skills = [
 export const projects = {
     LangChainProjects: [
         {
+          projectName: "Travel Assistant Chat",
+          image: "images/ai.png",
+          summary:
+            "AI travel assistant using the Agno framework, integrating autonomous agents with tool-augmented reasoning and real-time weather APIs to deliver personalized travel planning.   | Click here",
+          preview: "https://travel-assistant-ais.streamlit.app/",
+          techStack: ["AGNO ","OpenWeatherMap API", "Python", "Groq"],
+        },
+        {
           projectName: "YT-TranscriptBot",
           image: "images/yt.jpeg",
           summary:
