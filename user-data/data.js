@@ -62,6 +62,14 @@ export const skills = [
 
 export const projects = {
     LangChainProjects: [
+                {
+          projectName: "Patient management system",
+          image: "images/hs.avif",
+          summary:
+            "Interactive Patient Management System using FastAPI, Streamlit, and RESTful APIs; integrated data querying with LangChain, Groq LLM, and DuckDuckGo tools for real-time medical insights.   | Click here",
+          preview: "https://github.com/aishuse/Patient-management-system",
+          techStack: ["AGNO ","Langchain", "FastAPI", "Python", "Groq"],
+        },
         {
           projectName: "Travel Assistant Chat",
           image: "images/ai.png",
