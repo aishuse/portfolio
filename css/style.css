@@ -655,8 +655,9 @@ body.offcanvas .colorlib-nav-toggle {
 
 .about-desc h1 {
 	margin-bottom: 20px;
-	font-size: 38px;
-	font-weight: 600;
+	margin-left: -20px;
+	font-size: 20px;
+	font-weight: 700;
 	font-family: "Montserrat", Georgia, serif;
 }
 
@@ -929,12 +930,13 @@ body.offcanvas .colorlib-nav-toggle {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
 	margin-bottom: 10px;
-	font-size: 20px;
-	font-weight: 500;
+	font-size: 15px;
+	font-weight: 600;
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label .timeline-sublabel {
-	font-weight: 600;
+	font-weight: 500;
+		font-size: 13px;
 	margin: 0 0px 5px;
 }
 
@@ -955,10 +957,11 @@ body.offcanvas .colorlib-nav-toggle {
 	span {
 	-webkit-opacity: 0.4;
 	-moz-opacity: 0.4;
-	opacity: 0.4;
+	opacity: 0.5;
 	-ms-filter: alpha(opacity=40);
 	filter: alpha(opacity=40);
-	font-size: 16px;
+	font-size: 13px;
+	margin-left: 5px;
 }
 
 .services {
@@ -1300,7 +1303,7 @@ body.offcanvas .colorlib-nav-toggle {
 	font-weight: 500;
 	margin-bottom: 20px;
 	color: rgba(0, 0, 0, 0.7);
-	font-size: 14px;
+	font-size: 10px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
 }

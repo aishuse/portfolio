@@ -1,64 +1,77 @@
 export const bio = [
-  "I am a <strong style='color: #FF6347;'>data science enthusiast</strong> with a strong foundation in <strong style='color: #FF6347;'> machine learning, deep learning and big data technologies</strong>. With over <strong style='color: #FF6347;'>two years of experience</strong> as a <strong style='color: #FF6347;'>Python Django Developer</strong>, I have designed and maintained <strong style='color: #FF6347;'>scalable web applications</strong>. My academic background has equipped me with expertise in <strong style='color: #FF6347;'>machine learning, deep learning, and natural language processing</strong>, focusing on <strong style='color: #FF6347;'>predictive modeling, text analysis, and AI-driven solutions</strong>.<br><br>" +
+  "Hi, I’m Aiswarya — a <strong style='color: #FF6347;'>Data Science and Generative / Agentic AI enthusiast</strong> with a strong academic foundation and a passion for lifelong learning.<br><br>" +
 
-  "I am proficient in <strong style='color: #FF6347;'>SQL</strong>, <strong style='color: #FF6347;'>data visualization</strong> (<em>Power BI, Matplotlib, Seaborn</em>), and <strong style='color: #FF6347;'>big data tools</strong> like <strong style='color: #FF6347;'>Hadoop, Spark, and Hive</strong> for large-scale data processing. With <strong style='color: #FF6347;'>strong analytical thinking</strong> and <strong style='color: #FF6347;'>problem-solving skills</strong>, I am eager to apply my knowledge to <strong style='color: #FF6347;'>real-world challenges</strong>, collaborate with <strong style='color: #FF6347;'>cross-functional teams</strong>, and contribute to <strong style='color: #FF6347;'>data-driven decision-making</strong>. I am actively seeking opportunities to grow and make an impact in the field of <strong style='color: #FF6347;'>data science</strong>.<br><br>" +
+  "My skills have been developed through a mix of formal education and self-initiated exploration. While my academic background has equipped me with core concepts in data science, I’ve also gone beyond the classroom — diving into emerging technologies like LangChain, RAG pipelines, and agentic AI through hands-on projects and continuous self-learning.<br><br>" +
+
+  "I'm driven by curiosity and a deep interest in building intelligent, real-world solutions. Whether it's analyzing complex data or experimenting with the latest AI tools, I enjoy learning fast, solving problems, and contributing meaningfully through what I create.<br><br>" +
 
   "<span style='font-size: 18px;'>Want to know more about me? 🤖 " +
   "<a href='https://my-assistant-chatbot.streamlit.app/' target='_blank' style='color: #00FFFF; font-weight: bold; text-decoration: none;'>" +
-  "Ask my AI chatbot!</a></span>" +
-        "<img src='https://img.icons8.com/fluency/24/robot-2.png' alt='chatbot icon' style='vertical-align: middle; margin-right: 6px;'/>"
-
+  "Ask my Assistant chatbot!</a></span>" +
+  "<img src='https://img.icons8.com/fluency/24/robot-2.png' alt='chatbot icon' style='vertical-align: middle; margin-left: 6px;'/>"
 ];
-
 
 
 
 
 export const skills = [
   {
-    title: "Languages",
-    skillName: "JavaScript, Python, SQL",
+    title: "Data Science & AI",
+    skillName: "ML, DL, NLP, Transformers",
     color: "1",
-    percentage: "80",
+    percentage: "85",
   },
   {
-    title: "Frameworks/Libraries",
-    skillName: "Django, Pandas, Numpy, Tensorflow, Keras",
+    title: "Generative & Agentic AI",
+    skillName: "LangChain, LangGraph, Agno, RAG Pipelines",
     color: "2",
     percentage: "70",
   },
-  // {
-  //   title: "Design",
-  //   skillName: "HTML, Bootstrap, CSS",
-  //   color: "3",
-  //   percentage: "70",
-  // },
   {
-    title: " Data Analysis & Visualization",
-    skillName: "PowerBi",
-    color: "4",
-    percentage: "50",
-  },
-  {
-    title: "Version Control",
-    skillName: "GitHub, JIRA",
-    color: "5",
-    percentage: "70",
-  },
-  {
-    title: "Data Science",
-    skillName: "Machine Learning, Deep Learning, NLP",
-    color: "6",
+    title: "API & Backend Development",
+    skillName: "FastAPI, REST APIs, Pydantic, Streamlit",
+    color: "3",
     percentage: "70",
   },
   {
     title: "Big Data Technologies",
-    skillName: "Hive, Pig, Hadoop, Spark",
-    color: "11",
-    percentage: "60",
+    skillName: "Hadoop, Spark, Hive, Pig",
+    color: "4",
+    percentage: "70",
   },
-
+  {
+    title: "Frameworks & Libraries",
+    skillName: "Django, Pandas, NumPy, TensorFlow, Keras, Scikit-learn",
+    color: "5",
+    percentage: "80",
+  },
+  {
+    title: "Cloud & DevOps",
+    skillName: "AWS (EC2, S3), Docker",
+    color: "6",
+    percentage: "70",
+  },
+  {
+    title: "Data Analysis & Visualization",
+    skillName: "Power BI, Matplotlib, Seaborn",
+    color: "7",
+    percentage: "70",
+  },
+  {
+    title: "Languages",
+    skillName: "Python, JavaScript, SQL",
+    color: "8",
+    percentage: "85",
+  },
+  {
+    title: "Version Control & Collaboration",
+    skillName: "GitHub, JIRA",
+    color: "9",
+    percentage: "75",
+  }
 ];
+
+
 
 export const projects = {
     LangChainProjects: [
@@ -66,8 +79,9 @@ export const projects = {
           projectName: "Patient management system",
           image: "images/hs.avif",
           summary:
-            "Interactive Patient Management System using FastAPI, Streamlit, and RESTful APIs; integrated data querying with LangChain, Groq LLM, and DuckDuckGo tools for real-time medical insights.   | Click here",
-          preview: "https://github.com/aishuse/Patient-management-system",
+            "interactive Patient Management System on AWS using FastAPI and Streamlit, integrating \n" +
+              "data querying with LangChain, Groq LLM, and DuckDuckGo tools to provide real-time medical insights.   | Click here",
+          preview: "https://patient-management-system-ais.streamlit.app/",
           techStack: ["AGNO ","Langchain", "FastAPI", "Python", "Groq"],
         },
         {
@@ -516,7 +530,7 @@ export const footer = [
         link: "https://www.linkedin.com/in/aiswarya-baby/",
       },
               {
-        text: "Email: babyaiswarya180@gmail.com ",
+        text: "Email: babyaiswarya180@gmail.com, aiswarya.baby@torontomu.ca ",
       },
     ],
 
