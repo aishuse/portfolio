@@ -6,7 +6,7 @@ export const bio = [
   "I'm driven by curiosity and a deep interest in building intelligent, real-world solutions. Whether it's analyzing complex data or experimenting with the latest AI tools, I enjoy learning fast, solving problems, and contributing meaningfully through what I create.<br><br>" +
 
   "<span style='font-size: 18px;'>Want to know more about me? 🤖 " +
-  "<a href='https://my-assistant-chatbot.streamlit.app/' target='_blank' style='color: #00FFFF; font-weight: bold; text-decoration: none;'>" +
+  "<a href='https://aiswarya-assistant.streamlit.app/' target='_blank' style='color: #00FFFF; font-weight: bold; text-decoration: none;'>" +
   "Ask my Assistant chatbot!</a></span>" +
   "<img src='https://img.icons8.com/fluency/24/robot-2.png' alt='chatbot icon' style='vertical-align: middle; margin-left: 6px;'/>"
 ];
