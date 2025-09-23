@@ -1,7 +1,7 @@
 export const bio = [
   "Hi, I’m Aiswarya — a <strong style='color: #FF6347;'>Data Science and Generative / Agentic AI enthusiast</strong> with a strong academic foundation and a passion for lifelong learning.<br><br>" +
 
-  "My skills have been developed through a mix of formal education and self-initiated exploration. While my academic background has equipped me with core concepts in data science, I’ve also gone beyond the classroom — diving into emerging technologies like LangChain, RAG pipelines, and agentic AI through hands-on projects and continuous self-learning.<br><br>" +
+  "My skills have been developed through a mix of formal education and self-initiated exploration. While my academic background has equipped me with core concepts in data science, I’ve also gone beyond the classroom diving into emerging technologies like Langgraph, LangChain, RAG pipelines, and agentic AI through hands-on projects and continuous self-learning.<br><br>" +
 
   "I'm driven by curiosity and a deep interest in building intelligent, real-world solutions. Whether it's analyzing complex data or experimenting with the latest AI tools, I enjoy learning fast, solving problems, and contributing meaningfully through what I create.<br><br>" +
 
@@ -23,13 +23,13 @@ export const skills = [
   },
   {
     title: "Generative & Agentic AI",
-    skillName: "LangChain, LangGraph, Agno, RAG Pipelines",
+    skillName: "LangChain, LangGraph, Agno, RAG Pipelines, CrewAI, n8n, Langsmith",
     color: "2",
     percentage: "70",
   },
   {
     title: "API & Backend Development",
-    skillName: "FastAPI, REST APIs, Pydantic, Streamlit",
+    skillName: "Django, FastAPI, REST APIs, Pydantic, Streamlit",
     color: "3",
     percentage: "70",
   },
@@ -41,13 +41,13 @@ export const skills = [
   },
   {
     title: "Frameworks & Libraries",
-    skillName: "Django, Pandas, NumPy, TensorFlow, Keras, Scikit-learn",
+    skillName:" Pandas, NumPy, TensorFlow, Keras, Scikit-learn",
     color: "5",
     percentage: "80",
   },
   {
     title: "Cloud & DevOps",
-    skillName: "AWS (EC2, S3), Docker",
+    skillName: "MLOps, MCP, AWS (EC2, S3), Docker",
     color: "6",
     percentage: "70",
   },
@@ -75,6 +75,14 @@ export const skills = [
 
 export const projects = {
     LangChainProjects: [
+                        {
+          projectName: "Bank Customer Churn Prediction",
+          image: "images/bnk.jpeg",
+          summary:
+            "End-to-end churn prediction system integrating ML, Generative AI, and Agentic AI for real-time customer insights and retention. Delivered full pipeline from model development to deployment, automation, and monitoring.   | Click here",
+          preview: "http://ec2-34-201-147-159.compute-1.amazonaws.com:8080/",
+          techStack: ["Python", "LightGBM", "XGBoost", "DVC", "MLflow", "Docker", "FastAPI", "Streamlit", "GitHubActions", "AWS EC2", "LangChain", "Groq", "LangGraph"],
+        },
                 {
           projectName: "Patient management system",
           image: "images/hs.avif",
@@ -84,6 +92,33 @@ export const projects = {
           preview: "https://patient-management-system-ais.streamlit.app/",
           techStack: ["AGNO ","Langchain", "FastAPI", "Python", "Groq"],
         },
+        {
+  projectName: "AI-driven Recruitment Assistant",
+  image: "images/r.webp",
+  summary:
+    "Automated resume filtering, candidate shortlisting, and interview scheduling using n8n, Pinecone, Airtable, and OpenAI. Reduced manual screening time by 80%. | View Project",
+  preview: "https://www.linkedin.com/feed/update/urn:li:activity:7365937817044049920/", // replace with exact repo if you want
+  techStack: ["n8n", "Pinecone", "Airtable", "OpenAI"],
+},
+
+{
+  projectName: "Newcomer Assistance Crew",
+  image: "images/can.jpg",
+  summary:
+    "AI assistant for newcomers in Canada using CrewAI and Gemini LLM. Integrated web scraping for personalized job, housing, and healthcare recommendations. | Live App",
+  preview: "https://github.com/aishuse/settlement-advisor",
+  techStack: ["CrewAI", "Gemini LLM", "Web Scraping", "Python"],
+},
+
+{
+  projectName: "RAG-Based PDF Q&A System",
+  image: "images/rag.jpg",
+  summary:
+    "Document Q&A system with LangChain, FAISS, and LLMs. Users can upload PDFs and query documents in real time. | View Project",
+  preview: "https://pdf-assistant-ais.streamlit.app/",
+  techStack: ["LangChain", "FAISS", "LLMs", "RAG"],
+},
+
         {
           projectName: "Travel Assistant Chat",
           image: "images/ai.png",
@@ -105,7 +140,7 @@ export const projects = {
           image: "images/cht.png",
           summary:
             "Personalized AI assistant chatbot using LangChain and Streamlit to deliver real-time, context-aware responses about me.",
-          preview: "https://my-assistant-chatbot.streamlit.app/",
+          preview: "https://aiswarya-assistant.streamlit.app/",
           techStack: ["LangChain", "Groq", "Python", "Streamlit"],
         },
 
@@ -172,6 +207,14 @@ export const projects = {
     },
   ],
   MLProjects: [
+      {
+          projectName: "Bank Customer Churn Prediction",
+          image: "images/bnk.jpeg",
+          summary:
+            "End-to-end churn prediction system integrating ML, Generative AI, and Agentic AI for real-time customer insights and retention. Delivered full pipeline from model development to deployment, automation, and monitoring.   | Click here",
+          preview: "http://ec2-34-201-147-159.compute-1.amazonaws.com:8080/",
+          techStack: ["Python", "LightGBM", "XGBoost", "DVC", "MLflow", "Docker", "FastAPI", "Streamlit", "GitHubActions", "AWS EC2", "LangChain", "Groq", "LangGraph"],
+        },
     {
       projectName: "House price",
       image: "images/house.jpg",
@@ -247,7 +290,7 @@ export const experience = [
 
 export const education = [
     {
-    title: "Pursuing Masters in Data Science and Analytics",
+    title: "MSc. Data Science and Analytics",
     duration: "September 2024 - August 2025",
     subtitle: "Toronto Metropolitan University, ON, Canada",
     details: [],
