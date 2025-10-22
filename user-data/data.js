@@ -1,13 +1,15 @@
 export const bio = [
-  "Hi, I’m Aiswarya — a <strong style='color: #FF6347;'>Data Science and Generative / Agentic AI enthusiast</strong> with a strong academic foundation and a passion for lifelong learning.<br><br>" +
+  "Hi, I’m Aiswarya — an <strong style='color: #FFD700 ;'>MSc Data Science and Analytics graduate</strong> from Toronto Metropolitan University (TMU) and a <strong style='color:#FFD700;'>Generative / Agentic AI enthusiast</strong> with a strong academic foundation and a passion for lifelong learning.<br><br>" +
 
-  "My skills have been developed through a mix of formal education and self-initiated exploration. While my academic background has equipped me with core concepts in data science, I’ve also gone beyond the classroom diving into emerging technologies like Langgraph, LangChain, RAG pipelines, and agentic AI through hands-on projects and continuous self-learning.<br><br>" +
+  "My skills have been developed through a mix of formal education and self-initiated exploration. While my academic background has equipped me with core concepts in data science, I’ve also gone beyond the classroom, diving into emerging technologies like LangGraph, LangChain, RAG pipelines, and agentic AI through hands-on projects and continuous self-learning.<br><br>" +
 
   "I'm driven by curiosity and a deep interest in building intelligent, real-world solutions. Whether it's analyzing complex data or experimenting with the latest AI tools, I enjoy learning fast, solving problems, and contributing meaningfully through what I create.<br><br>" +
 
+  "You can also check out my articles and insights on " +
+  "<a href='https://medium.com/@aiswarya180' target='_blank' style='color: #FF6347; font-weight: bold; text-decoration: none;'>Medium</a>.<br><br>" +
+
   "<span style='font-size: 18px;'>Want to know more about me? 🤖 " +
-  "<a href='https://aiswarya-assistant.streamlit.app/' target='_blank' style='color: #00FFFF; font-weight: bold; text-decoration: none;'>" +
-  "Ask my Assistant chatbot!</a></span>" +
+  "<a href='https://aiswarya-assistant.streamlit.app/' target='_blank' style='color: #00FFFF; font-weight: bold; text-decoration: none;'>Ask my Assistant chatbot!</a></span> " +
   "<img src='https://img.icons8.com/fluency/24/robot-2.png' alt='chatbot icon' style='vertical-align: middle; margin-left: 6px;'/>"
 ];
 
@@ -574,15 +576,22 @@ export const footer = [
     label: "Dev Profiles",
     data: [
       {
-        text: "GitHub",
+        text: "<strong style='color:#D2691E;'>GitHub </strong>: https://github.com/aishuse",
         link: "https://github.com/aishuse",
       },
       {
-        text: "Linkedin",
+        text: "<strong style='color:#D2691E;'>Linkedin </strong>: https://www.linkedin.com/in/aiswarya-baby/",
         link: "https://www.linkedin.com/in/aiswarya-baby/",
       },
-              {
-        text: "Email: babyaiswarya180@gmail.com, aiswarya.baby@torontomu.ca ",
+      {
+        text: "<strong style='color:#D2691E;'>Medium </strong>: https://medium.com/@aiswarya180",
+        link: "https://medium.com/@aiswarya180",
+      },
+        {
+        text: "<strong style='color:#D2691E;'>Google Scholar </strong>: https://medium.com/@aiswarya180",
+        link: "https://scholar.google.ca/citations?hl=en&user=yPcd-J0AAAAJ",
+      },      {
+        text: "<strong style='color:#D2691E;'> Email </strong>: aiswarya180@gmail.com, aiswarya.baby@torontomu.ca ",
       },
     ],
 
