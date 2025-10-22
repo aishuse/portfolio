@@ -17,13 +17,13 @@ export const bio = [
 export const skills = [
   {
     title: "Data Science & AI",
-    skillName: "ML, DL, NLP, Transformers",
+    skillName: "ML, DL, NLP, Transformers, FineTuning, Transfer Learning",
     color: "1",
     percentage: "85",
   },
   {
     title: "Generative & Agentic AI",
-    skillName: "LangChain, LangGraph, Agno, RAG Pipelines, CrewAI, n8n, Langsmith",
+    skillName: "LangChain, LangGraph, Langsmith, Agno, RAG Pipelines, CrewAI, n8n, MCP",
     color: "2",
     percentage: "70",
   },
@@ -47,7 +47,7 @@ export const skills = [
   },
   {
     title: "Cloud & DevOps",
-    skillName: "MLOps, MCP, AWS (EC2, S3), Docker",
+    skillName: "MLOps, LLMOps, MCP, AWS, Docker",
     color: "6",
     percentage: "70",
   },
@@ -79,19 +79,28 @@ export const projects = {
           projectName: "Bank Customer Churn Prediction",
           image: "images/bnk.jpeg",
           summary:
-            "End-to-end churn prediction system integrating ML, Generative AI, and Agentic AI for real-time customer insights and retention. Delivered full pipeline from model development to deployment, automation, and monitoring.   | Click here",
-          preview: "http://ec2-34-201-147-159.compute-1.amazonaws.com:8080/",
+            "Built an end-to-end ML pipeline (DVC) to predict customer churn using LightGBM (99% recall) with SMOTE, feature engineering, and RFECV; developed real-time churn prediction for individual customers via a Streamlit interface integrated with a FastAPI backend, and deployed models using MLflow Registry on AWS EC2 with CI/CD automation, Docker containerization, and monitoring (GitHub Actions). Integrated Generative AI (LangChain + Groq) to generate business-friendly explanations for individual churn reasons, and implemented a bulk churn detection & retention workflow that automatically identifies churned customers and sends personalized retention emails using Gmail SMTP, orchestrated through LangGraph.   | Click here",
+          preview: "https://github.com/aishuse/Bank-customer-churn-prediction",
           techStack: ["Python", "LightGBM", "XGBoost", "DVC", "MLflow", "Docker", "FastAPI", "Streamlit", "GitHubActions", "AWS EC2", "LangChain", "Groq", "LangGraph"],
         },
                 {
-          projectName: "Patient management system",
+          projectName: "MediSync Appointment System",
           image: "images/hs.avif",
           summary:
-            "interactive Patient Management System on AWS using FastAPI and Streamlit, integrating \n" +
-              "data querying with LangChain, Groq LLM, and DuckDuckGo tools to provide real-time medical insights.   | Click here",
-          preview: "https://patient-management-system-ais.streamlit.app/",
-          techStack: ["AGNO ","Langchain", "FastAPI", "Python", "Groq"],
+            "An agentic AI-powered clinic appointment platform that automates doctor recommendations, booking, calendar management, and email confirmations using FastAPI, MCP, and SQL database integration. Leverages MCP (Multi-Agent Control Platform) to orchestrate multiple agents for doctor recommendation, calendar availability checking, booking, and email notifications. Implements agentic workflows to provide personalized doctor suggestions based on symptoms and handles automated communication with patients.\n",
+          preview: "https://github.com/aishuse/medisync-appointment-system",
+          techStack: ["Python", "FastAPI", "Streamlit", "SQLAlchemy", "SQLite", "MCP (Agentic AI)", "Uvicorn", "Google Calendar API", "SMTP Email"],
+
         },
+        {
+          projectName: "Multi-Doc Conversational RAG Chatbot",
+          image: "images/rag.jpg",
+          summary:
+            "An intelligent Retrieval-Augmented Generation (RAG) chatbot capable of answering context-aware questions from multiple uploaded documents. Implemented MMR (Maximal Marginal Relevance) retrieval for diverse and non-redundant information. Integrated LangChain and LLMs (Google GenAI & Groq) to generate context-rich answers across combined document sources.",
+          preview: "https://github.com/aishuse/RAG-Chat",
+          techStack: ["FastAPI", "LangChain", "FAISS", "Google GenAI", "Groq", "RAG", "MMR", "Docker"],
+        },
+
         {
   projectName: "AI-driven Recruitment Assistant",
   image: "images/r.webp",
