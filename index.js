@@ -113,26 +113,51 @@ import { URLs } from './user-data/urls.js';
    * @returns {void}
    */
   
-  function populateSkills(items, id) {
-    const skillsTag = document.getElementById(id);
-    items.forEach(({ skillName, color, percentage }) => {
-      const h3 = getElement("h3", null);
-      h3.innerHTML = skillName;
-  
-      const divProgress = getElement("div", "progress");
-      const divProgressBar = getElement("div", `progress-bar color-${color}`);
-      divProgressBar.style = `width: ${percentage}%`;
-      divProgress.append(divProgressBar);
-  
-      const divProgressWrap = getElement("div", "progress-wrap");
-      divProgressWrap.append(h3, divProgress);
-  
-      const divAnimateBox = getElement("div", "col-md-6 animate-box");
-      divAnimateBox.append(divProgressWrap);
-  
-      skillsTag.append(divAnimateBox);
-    });
-  }
+function populateSkills(items, id) {
+  const skillsTag = document.getElementById(id);
+
+  items.forEach(({ title, skillName, color, percentage }) => {
+    // Skill title with a different color
+    const h3Title = getElement("h3", "skill-title");
+    h3Title.innerHTML = title;
+    h3Title.style.color = "#f8d757"; // Change this to any color you like
+    h3Title.style.marginBottom = "5px";
+
+    // Skill details
+    const pSkill = getElement("p", "skill-name");
+    pSkill.innerHTML = skillName;
+    pSkill.style.color = "#ffffff";
+    pSkill.style.lineHeight = "1.5";
+    pSkill.style.marginBottom = "10px";
+
+    // Progress bar
+    const divProgress = getElement("div", "progress");
+    divProgress.style.height = "8px";
+    divProgress.style.borderRadius = "5px";
+    divProgress.style.background = "#f4f0f0";
+
+    const divProgressBar = getElement("div", `progress-bar color-${color}`);
+    divProgressBar.style.width = `${percentage}%`;
+    divProgressBar.style.height = "100%";
+    divProgressBar.style.borderRadius = "5px";
+    divProgressBar.style.background = color; // Use color from skill object
+    divProgressBar.style.transition = "width 1s ease-in-out";
+
+    divProgress.append(divProgressBar);
+
+    // Wrap title, skill, and progress
+    const divProgressWrap = getElement("div", "progress-wrap");
+    divProgressWrap.append(h3Title, pSkill, divProgress);
+
+    // Full-width column (1 column layout)
+    const divAnimateBox = getElement("div", "col-md-12 animate-box");
+    divAnimateBox.append(divProgressWrap);
+
+    skillsTag.append(divAnimateBox);
+  });
+}
+
+
   
   /**
    * Populates projects to the HTML page.

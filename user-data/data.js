@@ -1,5 +1,5 @@
 export const bio = [
-  "Hi, I’m Aiswarya — an <strong style='color: #FFD700 ;'>MSc Data Science and Analytics graduate</strong> from Toronto Metropolitan University (TMU) and a <strong style='color:#FFD700;'>Generative / Agentic AI enthusiast</strong> with a strong academic foundation and a passion for lifelong learning.<br><br>" +
+  "Hi, I’m Aiswarya — an <strong style='color: #FFD700;'>NVIDIA Certified Professional in Agentic AI</strong> and an <strong style='color: #FFD700;'>MSc Data Science and Analytics graduate</strong> from Toronto Metropolitan University (TMU), with a passion for lifelong learning and Generative / Agentic AI.<br><br>" +
 
   "My skills have been developed through a mix of formal education and self-initiated exploration. While my academic background has equipped me with core concepts in data science, I’ve also gone beyond the classroom, diving into emerging technologies like LangGraph, LangChain, RAG pipelines, and agentic AI through hands-on projects and continuous self-learning.<br><br>" +
 
@@ -14,62 +14,53 @@ export const bio = [
 ];
 
 
-
-
 export const skills = [
   {
-    title: "Data Science & AI",
-    skillName: "ML, DL, NLP, Transformers, FineTuning, Transfer Learning",
-    color: "1",
-    percentage: "85",
-  },
-  {
     title: "Generative & Agentic AI",
-    skillName: "LangChain, LangGraph, Langsmith, Agno, RAG Pipelines, CrewAI, n8n, MCP",
-    color: "2",
-    percentage: "70",
+    skillName: `
+      LLMs, LangChain, LangGraph, LlamaIndex, CrewAI, Agno, MCP, 
+      tool/function calling, prompt engineering, RAG, MMR retrieval, 
+      vector databases (FAISS, Chroma), semantic search, agents, 
+      multi-agent workflows, evaluation of LLM agents, safety guardrails, 
+      tool-use reliability, prompt robustness
+    `,
+    percentage: 75,
+    color: "#2196f3" // progress bar color
   },
   {
-    title: "API & Backend Development",
-    skillName: "Django, FastAPI, REST APIs, Pydantic, Streamlit",
-    color: "3",
-    percentage: "70",
+    title: "Machine Learning & NLP",
+    skillName: `
+      Python, Scikit-learn, Keras, TensorFlow, PyTorch, Hugging Face, 
+      transformers, transfer learning, fine-tuning, SMOTE, RFECV, 
+      model evaluation, explainability
+    `,
+    percentage: 85,
+    color: "#4caf50"
   },
   {
-    title: "Big Data Technologies",
-    skillName: "Hadoop, Spark, Hive, Pig",
-    color: "4",
-    percentage: "70",
+    title: "MLOps / LLMOps & Cloud",
+    skillName: `
+      DVC, MLflow (tracking & model registry), Docker, GitHub Actions (CI/CD), 
+      AWS EC2, experiment tracking, model registry, monitoring/logging basics
+    `,
+    percentage: 70,
+    color: "#ff9800"
   },
   {
-    title: "Frameworks & Libraries",
-    skillName:" Pandas, NumPy, TensorFlow, Keras, Scikit-learn",
-    color: "5",
-    percentage: "80",
+    title: "Data & Visualization",
+    skillName: `
+      SQL, MySQL, PostgreSQL, Pandas, Power BI, Matplotlib, Seaborn, Streamlit
+    `,
+    percentage: 75,
+    color: "#9c27b0"
   },
   {
-    title: "Cloud & DevOps",
-    skillName: "MLOps, LLMOps, MCP, AWS, Docker",
-    color: "6",
-    percentage: "70",
-  },
-  {
-    title: "Data Analysis & Visualization",
-    skillName: "Power BI, Matplotlib, Seaborn",
-    color: "7",
-    percentage: "70",
-  },
-  {
-    title: "Languages",
-    skillName: "Python, JavaScript, SQL",
-    color: "8",
-    percentage: "85",
-  },
-  {
-    title: "Version Control & Collaboration",
-    skillName: "GitHub, JIRA",
-    color: "9",
-    percentage: "75",
+    title: "APIs & Back-End",
+    skillName: `
+      FastAPI, Django, REST APIs, Pydantic, Uvicorn, SMTP/Google APIs, Git, JIRA
+    `,
+    percentage: 75,
+    color: "#f44336"
   }
 ];
 
@@ -77,49 +68,34 @@ export const skills = [
 
 export const projects = {
     LangChainProjects: [
-                        {
-          projectName: "Bank Customer Churn Prediction",
-          image: "images/bnk.jpeg",
-          summary:
-            "Built an end-to-end ML pipeline (DVC) to predict customer churn using LightGBM (99% recall) with SMOTE, feature engineering, and RFECV; developed real-time churn prediction for individual customers via a Streamlit interface integrated with a FastAPI backend, and deployed models using MLflow Registry on AWS EC2 with CI/CD automation, Docker containerization, and monitoring (GitHub Actions). Integrated Generative AI (LangChain + Groq) to generate business-friendly explanations for individual churn reasons, and implemented a bulk churn detection & retention workflow that automatically identifies churned customers and sends personalized retention emails using Gmail SMTP, orchestrated through LangGraph.   | Click here",
-          preview: "https://github.com/aishuse/Bank-customer-churn-prediction",
-          techStack: ["Python", "LightGBM", "XGBoost", "DVC", "MLflow", "Docker", "FastAPI", "Streamlit", "GitHubActions", "AWS EC2", "LangChain", "Groq", "LangGraph"],
-        },
-                {
-          projectName: "MediSync Appointment System",
-          image: "images/hs.avif",
-          summary:
-            "An agentic AI-powered clinic appointment platform that automates doctor recommendations, booking, calendar management, and email confirmations using FastAPI, MCP, and SQL database integration. Leverages MCP (Multi-Agent Control Platform) to orchestrate multiple agents for doctor recommendation, calendar availability checking, booking, and email notifications. Implements agentic workflows to provide personalized doctor suggestions based on symptoms and handles automated communication with patients.\n",
-          preview: "https://github.com/aishuse/medisync-appointment-system",
-          techStack: ["Python", "FastAPI", "Streamlit", "SQLAlchemy", "SQLite", "MCP (Agentic AI)", "Uvicorn", "Google Calendar API", "SMTP Email"],
-
-        },
-        {
-          projectName: "Multi-Doc Conversational RAG Chatbot",
-          image: "images/rag.jpg",
-          summary:
-            "An intelligent Retrieval-Augmented Generation (RAG) chatbot capable of answering context-aware questions from multiple uploaded documents. Implemented MMR (Maximal Marginal Relevance) retrieval for diverse and non-redundant information. Integrated LangChain and LLMs (Google GenAI & Groq) to generate context-rich answers across combined document sources.",
-          preview: "https://github.com/aishuse/RAG-Chat",
-          techStack: ["FastAPI", "LangChain", "FAISS", "Google GenAI", "Groq", "RAG", "MMR", "Docker"],
-        },
-
-        {
-  projectName: "AI-driven Recruitment Assistant",
-  image: "images/r.webp",
-  summary:
-    "Automated resume filtering, candidate shortlisting, and interview scheduling using n8n, Pinecone, Airtable, and OpenAI. Reduced manual screening time by 80%. | View Project",
-  preview: "https://www.linkedin.com/feed/update/urn:li:activity:7365937817044049920/", // replace with exact repo if you want
-  techStack: ["n8n", "Pinecone", "Airtable", "OpenAI"],
-},
-
-{
-  projectName: "Newcomer Assistance Crew",
-  image: "images/can.jpg",
-  summary:
-    "AI assistant for newcomers in Canada using CrewAI and Gemini LLM. Integrated web scraping for personalized job, housing, and healthcare recommendations. | Live App",
-  preview: "https://github.com/aishuse/settlement-advisor",
-  techStack: ["CrewAI", "Gemini LLM", "Web Scraping", "Python"],
-},
+  {
+    projectName: "Predicting Bank Customer Churn – End-to-End ML + Generative + Agentic Workflow",
+    image: "images/bnk.jpeg",
+    summary: "• Built an end-to-end churn prediction pipeline with LightGBM achieving 90% recall on churners using SMOTE, feature engineering, and RFECV for robust performance on imbalanced data.\n• Implemented full MLOps lifecycle with DVC for data/version control, MLflow Registry for model management, Dockerized services on AWS EC2, and CI/CD using GitHub Actions.\n• Integrated a LangChain + Groq LLM layer to generate business-friendly explanations of churn drivers and orchestrated bulk churn detection plus personalized email retention campaigns using LangGraph and Gmail SMTP.",
+    preview: "https://github.com/aishuse/Bank-customer-churn-prediction",
+    techStack: ["Python", "LightGBM", "XGBoost", "SMOTE", "RFECV", "DVC", "MLflow", "Docker", "FastAPI", "Streamlit", "GitHub Actions", "AWS EC2", "LangChain", "Groq", "LangGraph"],
+  },
+  {
+    projectName: "Multi-Document Conversational RAG Chatbot",
+    image: "images/rag.jpg",
+    summary: "• Built a RAG chatbot that answers context-aware questions across multiple uploaded documents using FAISS vector search and Maximal Marginal Relevance (MMR) for diverse, non-redundant retrieval.\n• Orchestrated LLM calls via LangChain to generate grounded, source-aware responses, exposing the system through a FastAPI backend.\n• Containerized the service with Docker for reproducible deployment and easy scaling.",
+    preview: "https://github.com/aishuse/RAG-Chat",
+    techStack: ["FastAPI", "LangChain", "FAISS", "Google GenAI", "Groq", "RAG", "MMR", "Docker"],
+  },
+  {
+    projectName: "MediSync Appointment System – Agentic AI for Clinic Scheduling",
+    image: "images/hs.avif",
+    summary: "• Designed an agentic AI-powered appointment platform that automates doctor recommendations, slot booking, calendar sync, and email confirmations using multiple coordinated agents.\n• Used MCP (Multi-Agent Control Platform) to orchestrate specialized agents for symptom-based doctor recommendation, real-time calendar availability checks, booking, and patient communication.\n• Built a FastAPI backend with SQL database integration and Streamlit front-end, integrating Google Calendar and SMTP email for a near production-ready scheduling workflow.",
+    preview: "https://github.com/aishuse/medisync-appointment-system",
+    techStack: ["Python", "FastAPI", "Streamlit", "SQLAlchemy", "SQLite", "MCP (Agentic AI)", "Uvicorn", "Google Calendar API", "SMTP Email"],
+  },
+  {
+    projectName: "Newcomer Assistance Crew – Agentic Assistant for Newcomers to Canada",
+    image: "images/can.jpg",
+    summary: "• Developed a multi-agent CrewAI system powered by Gemini LLM to provide personalized recommendations on jobs, housing, and healthcare for newcomers, reducing information-access friction.\n• Integrated web scraping and structured data pipelines so agents could retrieve up-to-date local resources and compose tailored guidance flows.\n• Demonstrated agent collaboration and task decomposition for real-world, user-facing decision support.",
+    preview: "https://github.com/aishuse/settlement-advisor",
+    techStack: ["CrewAI", "Gemini LLM", "Web Scraping", "Python"],
+  },
 
 {
   projectName: "RAG-Based PDF Q&A System",
@@ -250,8 +226,9 @@ export const experience = [
   {
     title: "SayOne Technologies ",
     duration: "November 2021 - August 2024",
-    subtitle: "Software Engineer",
-    details: [" Designed, enhanced, and maintained scalable web applications using Django and Python.\n"],
+    subtitle: "Software Engineer ( Python Django Developer)",
+    details: ["\tDeveloped and maintained enterprise web applications using Python Django and REST APIs, improving system efficiency and performance for high-traffic clients.\n" +
+    "\tCollaborated with cross-functional teams to design scalable APIs, optimize database queries, and improve response times and reliability for production workloads and created clear technical documentation and guidelines so teammates could quickly understand, use, and extend the applications.\n"],
     tags: ["Python", "Django", "Javascript","DjangoREST"],
     icon: "truck ",
   },
@@ -373,6 +350,19 @@ export const training = [
 export const certifications = [
 
     {
+    title: " NVIDIA Certified Professional - Agentic AI  ",
+    duration: "Feb 2026",
+    subtitle: "NVIDIA",
+    details: [
+
+    ],
+    tags: [
+          ],
+    links: [
+            { url: "images/ncp.pdf", text: "View Certificate" },
+        ],
+    icon: "book",
+  },{
     title: " Big Data Analytics & Data Science ",
     duration: "2023",
     subtitle: "National Council for Technology and Training",
@@ -533,6 +523,18 @@ export const publications = [
     subtitle: "arXiv",
     links: [
             { url: "https://arxiv.org/abs/2502.14827 ", text: "Visit publication" },
+        ],
+    details: [],
+    tags: [
+          ],
+    icon: "book",
+  },
+     {
+    title: " •\tExplainable Machine Learning for Bank Customer Churn Prediction ",
+    duration: "Oct 2025",
+    subtitle: "Preprint",
+    links: [
+            { url: "https://www.researchgate.net/publication/396511273_Explainable_Machine_Learning_for_Bank_Customer_Churn_Prediction_A_Comparative_Study_of_Traditional_Ensemble_and_Deep_Learning_Models ", text: "Visit publication" },
         ],
     details: [],
     tags: [
