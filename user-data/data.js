@@ -75,6 +75,16 @@ export const projects = {
     preview: "https://github.com/aishuse/Bank-customer-churn-prediction",
     techStack: ["Python", "LightGBM", "XGBoost", "SMOTE", "RFECV", "DVC", "MLflow", "Docker", "FastAPI", "Streamlit", "GitHub Actions", "AWS EC2", "LangChain", "Groq", "LangGraph"],
   },
+
+  {
+    projectName: "Agentic Assistant for Canada Newcomers- Settlement guide",
+    image: "images/can.jpg",
+    summary: "Developed a modular AI settlement guide using CrewAI, orchestrating multiple domain-specific agents for \n" +
+        "jobs, housing, schools, healthcare, benefits, and community. Combined RAG (ChromaDB embeddings) and real-time web search to retrieve province-specific and \n" +
+        "current resources, enhancing guide accuracy and context relevance..    ",
+    preview: "https://github.com/aishuse/Agentic-Assistant-for-Canada-Newcomers-",
+    techStack: ["CrewAI", "Gemini LLM", "RAG", "Python", "Langchain", "ChromaDB"],
+  },
   {
     projectName: "Multi-Document Conversational RAG Chatbot",
     image: "images/rag.jpg",
@@ -89,13 +99,7 @@ export const projects = {
     preview: "https://github.com/aishuse/medisync-appointment-system",
     techStack: ["Python", "FastAPI", "Streamlit", "SQLAlchemy", "SQLite", "MCP (Agentic AI)", "Uvicorn", "Google Calendar API", "SMTP Email"],
   },
-  {
-    projectName: "Newcomer Assistance Crew – Agentic Assistant for Newcomers to Canada",
-    image: "images/can.jpg",
-    summary: "• Developed a multi-agent CrewAI system powered by Gemini LLM to provide personalized recommendations on jobs, housing, and healthcare for newcomers, reducing information-access friction.\n• Integrated web scraping and structured data pipelines so agents could retrieve up-to-date local resources and compose tailored guidance flows.\n• Demonstrated agent collaboration and task decomposition for real-world, user-facing decision support.",
-    preview: "https://github.com/aishuse/settlement-advisor",
-    techStack: ["CrewAI", "Gemini LLM", "Web Scraping", "Python"],
-  },
+
 
 {
   projectName: "RAG-Based PDF Q&A System",
